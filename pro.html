@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Try Catch Example</title>
+</head>
+
+<body>
+    <h2>JavaScript Error Handling</h2>
+    <p id="demo"></p>
+
+    <script>
+        try {
+            // Code that might cause an error
+            let num = 10 / x; // ❌ x is not defined
+            document.getElementById("demo").innerHTML = num;
+        } catch (error) {
+            // What to do if an error happens
+            document.getElementById("demo").innerHTML =
+                "⚠️ Error: " + error.message;
+        } finally {
+            // This always runs
+            console.log("Code finished running.");
+        }
+    </script>
+</body>
+
+</html>
